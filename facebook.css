@@ -1,0 +1,247 @@
+/* basic css */
+*{margin:0;padding: 0;}
+body{transition: all 0.5s ease;-webkit-transition: all 0.5s ease;-moz-transition: all 0.5s ease;}
+body, html{height:100%;background: #E9EBEE;}
+img{max-width: 100%;}
+a{text-decoration: none;}
+a:hover{text-decoration: underline;}
+
+
+/* Page Css */
+/* body css */
+
+/* header css */
+
+header{
+height: 105px;
+background-color:#3B5998;
+width: 100%;
+}
+#fb-logo{
+    height: 90px;
+    width: 250px;
+}
+#log-in-form{
+    color: #fff;
+}
+#email-p{
+    padding-top: 10px;
+}
+#password-p{
+    padding-top: 10px;
+}
+#password{
+    margin-left: 20px;
+}
+#forgotten{
+    color:#9CB4D8;
+    display: block;
+}
+#login-btn{
+    margin-top: 49px;
+    margin-left:10px;
+    height: 28px;
+    width: 60px;
+    color: #fff;
+    background: #4267B2;
+    border: 2px solid #31497e;
+}
+#login-btn:hover{
+    background: #365899;
+}
+
+/* logo and left side css */
+
+#aside-div{
+    border-right: 2px solid #ddd;
+    border-left: 2px solid #ddd;
+    width: 190px;
+}
+#page-logo{
+    height: 180px;
+    width: 180px;
+    border: 5px solid #fff;
+    border-radius: 100px;
+    margin-top: 10px;
+    box-shadow: 6px 4px 6px -5px #000;
+}
+#page-name{
+    color: #000;
+    font-weight: 450;
+    font-size: 25px;
+}
+#blue-badge{
+    border: 1px solid blue;
+    border-radius: 100px;
+    background: rgb(0, 174, 255);
+}
+#page-username{
+    color: #606770;
+    font-weight: 450;
+    font-size: 15px;
+}
+
+/* menu list css  */
+#active{
+    background: #dddddd;
+}
+#nav-list ,li{
+    padding-left: 0px;
+}
+#nav-list li{
+    border-bottom:  1px solid #afafaf;
+    position: relative;
+    font-size: 18px;
+    padding-bottom: 10px;
+    list-style-type: none;
+}
+#nav-list li:hover{
+    cursor: pointer;
+    background: #F5F6F7;
+    border-bottom:  1px solid #afafaf;
+}
+#nav-list li ul{
+    padding: 0;
+    position: absolute;
+    left: -99999px;
+}
+#nav-list li:hover ul{
+    left:0;
+    top: 37px;
+    z-index: 5555;
+    background: #F5F6F7;
+}
+#nav-list li ul li{
+    float: none;
+    border-bottom:  1px solid #afafaf;
+    width: 187px;
+}
+#nav-list li ul li:hover{
+    border: none;
+}
+#create-page-btn{
+    color: #fff;
+    font-weight: 500;
+    background: #42B72A;
+    border-radius:5px;
+    padding:10px;
+}
+/* section div css */
+#section-div{
+    border-right: 2px solid #ddd;
+    margin-left: 38px;
+}
+
+/* Like-page css  */
+
+#like-page{
+border-radius: 5px;
+height: 60px;
+background-color: #ffffff;
+}
+#like-page ul{
+    height: 31px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    float: right;
+    margin-top: 15px;
+    margin-right: 15px;
+    background-color: #f5f5f5;
+}
+#like-page ul li{
+    display:inline;
+    border-right: 2px solid rgb(255, 255, 255);
+    cursor: pointer;
+}  
+#like-page ul li:hover{
+    background-color: #eeeeee;
+    transition: all 0.5s ease;
+}   
+#like-page ul li:last-child{
+    border-right: none;
+}
+#like-page img{
+    width: 20px;
+    margin: 6px; 
+}
+ol, ul {
+    padding-left: 0px !important;
+}
+
+
+
+
+/* vertical tabs css  */
+
+  .tabs {     
+    position: relative;  
+    width:819px;
+    height:460px;
+    padding:30px 20px;
+    margin-top: 10px;
+    background:#fbfbfb;
+    box-shadow:5px 5px 10px 5px #ccc;
+    overflow:hidden;
+  }
+  .tabs .tab-header {
+    float:left;
+    width:180px;
+    height:100%;
+    border-right:1px solid #ccc;
+    padding:50px 0px;
+  }
+  .tabs .tab-header > div {
+    height:50px;
+    line-height:50px;
+    font-size:16px;
+    font-weight:600;
+    color:#888;
+    cursor:pointer;
+    padding-left:10px;
+  }
+  .tabs .tab-header > div:hover,
+  .tabs .tab-header > div.active {
+    color:#00acee;
+  }
+  .tabs .tab-header div i {
+    display:inline-block;
+    margin-left:10px;
+    margin-right:5px;
+  }
+  .tabs .tab-content {
+    position:relative;
+    height:100%;
+    overflow:hidden;
+  }
+  .tabs .tab-content > div > i {
+    display:inline-block;
+    width:50px;
+    height:50px;
+    background:#555;
+    color:#f5f5f5;
+    font-size:25px;
+    font-weight:600;
+    text-align:center;
+    line-height:50px;
+    border-radius:50%;
+  }
+  .tabs .tab-content > div {
+    position:absolute;
+    text-align:center;
+    padding:10px 20px;
+    top:-200%;
+    transition:all 500ms ease-in-out;
+  }
+  .tabs .tab-content > div.active {
+    top:0px;
+  }
+  
+  .tabs .tab-indicator {
+    position:absolute;
+    width:4px;
+    height:50px;
+    background:#00acee;
+    left:198px;
+    top:80px;
+    transition:all 500ms ease-in-out;
+  }
