@@ -11,10 +11,15 @@
     <title>Al Jazeera English | Verified Facebook Page</title>
 </head>
 <body>
+      <!-- temporary alert for responsiveness -->
+      <!-- <div id="respon">sorry</div> -->
+      <!-- temporary alert for responsiveness -->
+
+
     <!-- Header Part -- facebook logo and login from -->
     <header class="clearfix">
         <div style="width: 1050px; margin: 0 auto;">
-            <img id="fb-logo" class="float-start" alt="facebook" title="facebook" src="img/Facebook-Logo.png"/>
+            <img id="fb-logo" class="float-start" alt="facebook" title="facebook" src="img/Facebook-Logo.png" data-toggle="modal" data-target="#exampleModal" />
             <div id="log-in-form" class="float-end d-inline-flex">
                 <div id="email">
                     <p id="email-p">Email or phone</p>
@@ -34,10 +39,11 @@
 <!-- left || Aside part -- page logo and info-->
 <div style="width: 1050px; margin: 0 auto;">
     <div id="main">
-        <div class="clearfix">
-            <div id="aside-div" class="float-start">
+        <div class="row">
+            <div id="aside-div" class="col-3">
                 <aside>
-                    <img id="page-logo" alt="Al Jazeera" title="Al Jazeera English" src="img/aljazeera.jpg"/>
+                    <img id="page-logo" alt="Al Jazeera" title="Al Jazeera English" src="img/aljazeera.jpg" data-toggle="modal" 
+                    data-target="#exampleModal" />
                     <div id="page-info">
                         <a id="page-name" href="https://www.facebook.com/aljazeera/" target="_blank">
                         Al Jazeera English</a>
@@ -47,12 +53,13 @@
                             15M followers<br /><br />
                             <!-- Your Voice. Your Story. Your Platform. -->
                             Your 
-                            <span class="txt-rotate" data-period="2000" data-rotate='[ "Voice.", "Story....", "Platform" ]'></span>
+                            <span class="txt-rotate" data-period="2000" data-rotate='[ " Voice.", " Story....", " Platform." ]'></span>
                         </p>
                     </div>
-                    <ul id="nav-list">
+                    <ul id="nav-list" data-toggle="modal" 
+                    data-target="#exampleModal" >
                         <li id="active">Home</li>
-                        <li style="color: rgb(255, 0, 0);font-weight: 500;">Live</li>
+                        <li style="color: rgb(255, 0, 0);font-weight: 500;" href="">Live</li>
                         <li>Posts</li>
                         <li>Videos</li>
                         <li>Photos</li>
@@ -72,16 +79,25 @@
                     data-target="#exampleModal">Create a Page</button>
                 </aside>
             </div>
-            <div id="section-div" class="float-start">
-                <img alt="cover" src="img/cover.png">
-                <div class="position-sticky" id="like-page">
+            <div id="section-div" class="col-9">
+                <img alt="cover" src="img/cover.png" data-toggle="modal" 
+                data-target="#exampleModal" />
+                <!-- <div id="like-page">
                     <p style="padding: 20px;font-size: small;display: inline-block;">Followed by 15,142,233 people</p>
                     <ul>
                         <li data-toggle="modal" data-target="#exampleModal"><img src="img/facebook-like.png">Like</li>
                         <li data-toggle="modal" data-target="#exampleModal"><img src="img/share.png">Share</li>
                         <li data-toggle="modal" data-target="#exampleModal"><img src="img/more.png"></li>
                     </ul>
-                </div>
+                </div> -->
+                <nav id="nav" class="navbar sticky-top navbar-light bg-light justify-content-between">
+                  <p style="padding-top: 6px;margin-left: 15px;font-size: small;">Followed by 15,142,233 people</p>
+                  <ul>
+                    <li data-toggle="modal" data-target="#exampleModal"><img src="img/facebook-like.png">Like</li>
+                    <li data-toggle="modal" data-target="#exampleModal"><img src="img/share.png">Share</li>
+                    <li data-toggle="modal" data-target="#exampleModal"><img src="img/more.png"></li>
+                </ul>
+                </nav>
             
 
                 <!-- vertical tabs start -->
@@ -106,17 +122,17 @@
                       
                       <div class="active">
                         <h2>🔴 Al Jazeera English | Live</h2>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/-upyPouRrB8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe  width="560" height="315" src="https://www.youtube.com/embed/-upyPouRrB8" title="YouTube video player" frameborder="0" scrolling="yes" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen="true"></iframe>
                       </div>
                       
                       <div>
                         <h2>Start of Gaza ceasefire 'like first day of Eid'</h2>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Lvnlb713vbA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Lvnlb713vbA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen="true"></iframe>
                       </div>
 
                       <div>
                         <h2>All the Prime Minister’s Men | Al Jazeera Investigations</h2>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/a6v_levbUN4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/a6v_levbUN4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen="true"></iframe>
                       </div>
 
                       
@@ -128,22 +144,79 @@
 <p style="color: #a4a6a8;font-size: 20px;font-weight: bolder;margin-top: 10px;">
     Posts
 </p>
-<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Faljazeera%2Fposts%2F10160014840823690&show_text=true&width=500" width="500" height="482" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+<!-- id="post-grid" -->
+<div  class="row">
+  <div class=" col-8">
+    <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Faljazeera%2Fposts%2F10160014840823690&show_text=true&width=500" width="500" height="505" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
 
-<!-- <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Faljazeera%2Fposts%2F10160014690093690&show_text=true&width=500" width="500" height="482" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+    <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Faljazeera%2Fposts%2F10160014690093690&show_text=true&width=500" width="500" height="505" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+    
+    <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Faljazeera%2Fposts%2F10160014541708690&show_text=true&width=500" width="500" height="505" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+    
+    <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Faljazeera%2Fposts%2F10160014429823690&show_text=true&width=500" width="500" height="505" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+     
+    <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Faljazeera%2Fvideos%2F322925812577923%2F&show_text=true&width=560" width="500" height="505" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+  </div>
+  
 
-<iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Faljazeera%2Fvideos%2F322925812577923%2F&show_text=true&width=560" width="560" height="429" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
-
-<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Faljazeera%2Fposts%2F10160014541708690&show_text=true&width=500" width="500" height="482" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-
-<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Faljazeera%2Fposts%2F10160014429823690&show_text=true&width=500" width="500" height="482" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe> -->
-
-
-
-
-
-
-
+  <div class="col-4">
+    <div id="card" class="card">
+      <div class="card-body">
+        <h5 class="card-title">Community<a href="#" class="btn btn-primary float-end" data-toggle="modal" 
+          data-target="#exampleModal">see all</a></h5>
+        <p class="card-text">13,586,266 people like this</p>
+        <p class="card-text"> 15,150,475 people follow this.</p>
+      </div>
+    </div><!--card-->
+    <div id="card" class="card">
+      <div class="card-body">
+        <h5 class="card-title"><img style="width: 30px; padding-right: 5px;" src="img/facebook.png" alt="logo">Page transparency</h5>
+        <p class="card-text">
+          Facebook is showing information to help you better understand the purpose of a Page. See actions taken by the people who manage and post content.<br>
+          <code>Al Jazeera Media Network is responsible for this Page.</code></p>
+          <a href="#" class="btn btn-primary" data-toggle="modal" 
+          data-target="#exampleModal">See More</a>
+      </div>
+    </div><!--card-->
+    <div id="card" class="card">
+      <div class="card-body">
+        <h5 class="card-title">People<a href="#" class="btn btn-primary float-end" data-toggle="modal" 
+          data-target="#exampleModal">&rArr;</a></h5>
+        <p class="card-text">13,586,266 likes</p>
+      </div>
+    </div><!--card-->
+    <!-- breadcrumb -->
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="https://www.facebook.com/pages/category/">Pages</a></li>
+        <li class="breadcrumb-item"><a href="https://www.facebook.com/pages/category/all-businesses/">Businesses</a></li>
+        <li class="breadcrumb-item"><a href="https://www.facebook.com/pages/category/media-news-company/">Media/news company</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Al Jazeera English</li>
+      </ol>
+    </nav><!-- breadcrumb -->
+    <!-- language -->
+    <div class="border border-light bg-light">
+      <ul class="list-inline">
+        <li class="list-inline-item"> English (UK) .</li>
+        <li class="list-inline-item"> বাংলা ·</li>
+        <li class="list-inline-item"> অসমীয়া ·</li>
+        <li class="list-inline-item"> Español ·</li>
+        <li class="list-inline-item"> Português (Brasil) ·</li>
+      </ul>
+    </div>
+    <!-- language -->
+    <!-- privacy  -->
+    <ul class="list-inline">
+      <li class="list-inline-item">Privacy ·</li>
+      <li class="list-inline-item"> Terms ·</li>
+      <li class="list-inline-item"> Advertising ·</li>
+      <li class="list-inline-item"> AdChoices ·</li>
+      <li class="list-inline-item"> Cookies ·</li>
+      <li class="list-inline-item"> More</li>
+      <li class="list-inline-item"> Facebook © 2021</li>
+    </ul><!-- privacy  -->
+  </div><!--col-4-->
+</div><!--row-->
 
 
 <!-- posts -->

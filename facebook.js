@@ -1,3 +1,8 @@
+
+
+
+
+
 // Type Writer Effect --start
 
 var TxtRotate = function(el, toRotate, period) {
