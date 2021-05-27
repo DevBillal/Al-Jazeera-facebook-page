@@ -310,11 +310,7 @@ ol, ul {
     transition:all 500ms ease-in-out;
   }
 
-  /* temporary alert for responsiveness */
- #respon{
-     /* display: none; */
- }
-  /* temporary alert for responsiveness */
+
 
 
 /* post css */
@@ -347,14 +343,34 @@ laptop Desktop{
     laptop(m)-1024px;
     laptop(L)-1440px;
 } */
-
-@media(min-width:320px) and (max-width:1066px){
-body{
-    display: none;
+@media(min-width:1065px) and (max-width:2400px){
+    #respon{
+        display: none;
+    }
 }
-#respon{
+@media(min-width:150px) and (max-width:1066px){
+    #respon{
+        display: block;
+    }
+    header{
+        display: none;
+    }
+    #main{
+        display: none;
+    }
+}
+
+  /* temporary alert for responsiveness */
+  #respon{
+    border: 20px solid rgb(255, 50, 50);
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    color: rgb(225, 50, 50);
+}
+  #respon img{
     display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
-}
-
-
+ /* temporary alert for responsiveness */
